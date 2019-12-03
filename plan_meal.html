@@ -232,6 +232,7 @@
     </div>
 </div>
   <h2>Recipes</h2>
+  <p class="instructions">Drag recipe to desired day of week. Click on the recipe to view details.</p>
 <div class="row">
   <div class="col">
     <div class="tab">
@@ -244,42 +245,25 @@
   <div class="row no-gutters">
     <div class="col">
       <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <p draggable="true" ondragstart="drag(event)" id="drag1">Recipe 1</p>
+          <a draggable="true" data-toggle="modal" data-target="#recipe1" href="" ondragstart="drag(event)" id="drag1">Bacon, Cheddar and Spinach Strata</a>
       </div>
       <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <p draggable="true" ondragstart="drag(event)" id="drag2">Recipe 2</p>
+          <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe2" id="drag2">Fluffy Pancakes</a>
       </div>
       <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <p draggable="true" ondragstart="drag(event)" id="drag3">Recipe 3</p>
+          <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe3" id="drag3">Breakfast Baked Potato</a>
       </div>
       <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <p draggable="true" ondragstart="drag(event)" id="drag4">Recipe 4</p>
+          <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe4" id="drag4">Sausage Gravy and Biscuits</a>
       </div>
       <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <p draggable="true" ondragstart="drag(event)" id="drag5">Recipe 5</p>
+          <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe5" id="drag5">Banana Bread</a>
       </div>
       <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <p draggable="true" ondragstart="drag(event)" id="drag6">Recipe 6</p>
-      </div>
-    </div>
-    <div class="col">
-      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <p draggable="true" ondragstart="drag(event)" id="drag12">Recipe 7</p>
+          <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe6" id="drag6">Soft Scrambled Eggs</a>
       </div>
       <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <p draggable="true" ondragstart="drag(event)" id="drag13">Recipe 8</p>
-      </div>
-      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <p draggable="true" ondragstart="drag(event)" id="drag14">Recipe 9</p>
-      </div>
-      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <p draggable="true" ondragstart="drag(event)" id="drag15">Recipe 10</p>
-      </div>
-      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <p draggable="true" ondragstart="drag(event)" id="drag16">Recipe 11</p>
-      </div>
-      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <p draggable="true" ondragstart="drag(event)" id="drag17">Recipe 12</p>
+          <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe7" id="drag7">Apple Cinnamon Oatmeal</a>
       </div>
     </div>
   </div>
@@ -289,22 +273,49 @@
 
 <div id="recipe-lunch" class="tabcontent2">
   <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-      <p draggable="true" ondragstart="drag(event)" id="drag7">Recipe 1</p>
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe8" id="drag8">Chicken Fried Steak</a>
   </div>
   <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-      <p draggable="true" ondragstart="drag(event)" id="drag8">Recipe 2</p>
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe9" id="drag9">Sausage, Potato and Kale Soup</a>
   </div>
   <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-      <p draggable="true" ondragstart="drag(event)" id="drag9">Recipe 3</p>
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe10" id="drag10">Creamy Mushroom Soup</a>
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe11" id="drag11">Turkey Wraps</a>
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe12" id="drag12">Tuna Salad</a>
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe13" id="drag13">Spicy Grilled Cheese Sandwich</a>
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe14" id="drag14">Cobb Salad</a>
   </div>
 </div>
 
 <div id="recipe-dinner" class="tabcontent2">
   <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-      <p draggable="true" ondragstart="drag(event)" id="drag10">Recipe 1</p>
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe15" id="drag15"> Lasagna</a>
   </div>
   <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-      <p draggable="true" ondragstart="drag(event)" id="drag11">Recipe 2</p>
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe16" id="drag16">Shredded Beef Chimichangas</a>
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe17" id="drag17">Greek Lemon Chicken and Potatoes</a>
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe18" id="drag18">Salisbury Steak with Onion and Mushroom Gravy</a>
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe19" id="drag19">Baked Macaroni and Cheese</a>
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe20" id="drag20">General Tso's Chicken</a>
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <a draggable="true" ondragstart="drag(event)" data-toggle="modal" href="" data-target="#recipe21" id="drag21">Fish Tacos</a>
   </div>
 </div>
   </div>
@@ -356,6 +367,788 @@ function drop(ev) {
 </script>
 
       </div>
+
+      <!-- Modal -->
+<div class="modal fade" id="recipe1" tabindex="-1" role="dialog" aria-labelledby="recipe1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Bacon, Cheddar and Spinach Strata</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="https://images.media-allrecipes.com/userphotos/720x405/3130824.jpg" width="300px" height="200px" alt="">
+        <br>
+        <br>
+        <p>Servings: 12</p>
+        <p>Calories per serving: 540</p>
+
+        <h5>Ingredients:</h5>
+        <ul>
+          <li>Ingredient 1</li>
+          <li>Ingredient 2</li>
+          <li>Ingredient 3</li>
+        </ul>
+
+        <h5>Directions:</h5>
+        <ol>
+          <li>Step 1</li>
+          <li>Step 2</li>
+          <li>Step 3</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="recipe2" tabindex="-1" role="dialog" aria-labelledby="recipe2" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Fluffy Pancakes</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/720x405/7393312.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 4</p>
+  <p>Calories per serving: 230</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe4" tabindex="-1" role="dialog" aria-labelledby="recipe4" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Sausage Gravy and Biscuits</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/560x315/571726.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 8</p>
+  <p>Calories per serving: 333</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe5" tabindex="-1" role="dialog" aria-labelledby="recipe5" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Banana Bread</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/720x405/2221074.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 12</p>
+  <p>Calories per serving: 334</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe3" tabindex="-1" role="dialog" aria-labelledby="recipe3" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Breakfast Baked Potato</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/560x315/6647369.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 2</p>
+  <p>Calories per serving: 663</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="recipe6" tabindex="-1" role="dialog" aria-labelledby="recipe6" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Soft Scrambled Eggs</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/560x315/6909779.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 2</p>
+  <p>Calories per serving: 289</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="recipe7" tabindex="-1" role="dialog" aria-labelledby="recipe7" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Apple Cinnamon Oatmeal</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/720x405/4481210.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 2</p>
+  <p>Calories per serving: 217</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe8" tabindex="-1" role="dialog" aria-labelledby="recipe8" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Chicken Fried Steak</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/720x405/5179074.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 4</p>
+  <p>Calories per serving: 791</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe9" tabindex="-1" role="dialog" aria-labelledby="recipe9" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Sausage, Potato and Kale Soup</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/720x405/970170.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 12</p>
+  <p>Calories per serving: 266</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe10" tabindex="-1" role="dialog" aria-labelledby="recipe10" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Creamy Mushroom Soup</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/720x405/1072703.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 6</p>
+  <p>Calories per serving: 272</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe11" tabindex="-1" role="dialog" aria-labelledby="recipe11" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Turkey Wraps</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/560x315/627733.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 6</p>
+  <p>Calories per serving: 457</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe12" tabindex="-1" role="dialog" aria-labelledby="recipe12" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Tuna Salad</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/560x315/44694.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 4</p>
+  <p>Calories per serving: 142</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe13" tabindex="-1" role="dialog" aria-labelledby="recipe13" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Spicy Grilled Cheese Sandwich</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/560x315/5081856.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 2</p>
+  <p>Calories per serving: 352</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe14" tabindex="-1" role="dialog" aria-labelledby="recipe14" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Cobb Salad</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F450436.jpg&w=726&h=726&c=sc&poi=face&q=85" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 6</p>
+  <p>Calories per serving: 525</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="recipe15" tabindex="-1" role="dialog" aria-labelledby="recipe15" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle"> Lasagna</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/720x405/3359675.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 12</p>
+  <p>Calories per serving: 448</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe16" tabindex="-1" role="dialog" aria-labelledby="recipe16" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Shredded Beef Chimichangas</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/250x250/365928.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 4</p>
+  <p>Calories per serving: 714</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe17" tabindex="-1" role="dialog" aria-labelledby="recipe17" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Greek Lemon Chicken and Potatoes</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5909156.jpg&w=626&h=626&c=sc&poi=face&q=85" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 4</p>
+  <p>Calories per serving: 1139</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe18" tabindex="-1" role="dialog" aria-labelledby="recipe18" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Salisbury Steak with Onion and Mushroom Gravy</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/560x315/5678662.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 4</p>
+  <p>Calories per serving: 524</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe19" tabindex="-1" role="dialog" aria-labelledby="recipe19" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Baked Macaroni and Cheese</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/720x405/964194.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 3</p>
+  <p>Calories per serving: 968</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe20" tabindex="-1" role="dialog" aria-labelledby="recipe20" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">General Tso's Chicken</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3810781.jpg&w=268&h=268&c=sc&poi=face&q=85" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 6</p>
+  <p>Calories per serving: 829</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="recipe21" tabindex="-1" role="dialog" aria-labelledby="recipe21" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle">Fish Tacos</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img src="https://images.media-allrecipes.com/userphotos/560x315/1017268.jpg" width="300px" height="200px" alt="">
+  <br>
+  <br>
+  <p>Servings: 4</p>
+  <p>Calories per serving: 416</p>
+
+  <h5>Ingredients:</h5>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+
+  <h5>Directions:</h5>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
 
     </body>
 </html>
