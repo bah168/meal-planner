@@ -1,0 +1,26 @@
+body {
+  background: url(https://images.unsplash.com/photo-1546548970-71785318a17b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=500);
+  background-size: cover;
+  background-position:center;
+
+}
+
+.card {
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+@media print {
+  .visible-print  { display: inherit !important; }
+  .hidden-print   { display: none !important; }
+}

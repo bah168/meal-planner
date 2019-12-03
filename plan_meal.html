@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Plan a Meal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="plan_meal.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </head>
+    <body>
+      <div class="container">
+        <h2>Plan Meal</h2>
+<p class="instructions">Drag and drop recipes onto calendar to create meal plan for each meal type.</p>
+
+<div class="tab">
+  <button class="tablinks active" onclick="openTab(event, 'breakfast')">Breakfast</button>
+  <button class="tablinks" onclick="openTab(event, 'lunch')">Lunch</button>
+  <button class="tablinks" onclick="openTab(event, 'dinner')">Dinner</button>
+</div>
+
+<div id="breakfast" class="tabcontent" style=display:block>
+  <div class="row no-gutters">
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Monday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+      </div>
+    </div>
+
+    </div>
+
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Tuesday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    </div>
+  </div>
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Wednesday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    </div>
+  </div>
+      <div class="col">
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Thursday</div>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+      </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Friday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    </div>
+  </div>
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Saturday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    </div>
+  </div>
+  <div class="col">
+    <div class="card bg-light mb-3" style="max-width: 18rem;">
+    <div class="card-header">Sunday</div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+  </div>
+
+</div>
+</div>
+    </div>
+    <div class="buttons">
+        <button type="button" class="btn btn-success" onclick="window.location.href='print_meal_plan.html'">Print Meal Plan</button>
+        <button type="button" class="btn btn-danger" onclick="window.location.href='shopping-list.html'">Generate Shopping List</button>
+    </div>
+
+
+
+
+  </div>
+
+<div id="lunch" class="tabcontent">
+  <div class="row no-gutters">
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Monday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+      </div>
+    </div>
+
+    </div>
+
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Tuesday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    </div>
+  </div>
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Wednesday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    </div>
+  </div>
+      <div class="col">
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Thursday</div>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+      </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Friday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    </div>
+  </div>
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Saturday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    </div>
+  </div>
+  <div class="col">
+    <div class="card bg-light mb-3" style="max-width: 18rem;">
+    <div class="card-header">Sunday</div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+  </div>
+
+</div>
+</div>
+
+    </div>
+    <div class="buttons">
+        <button type="button" class="btn btn-success" onclick="window.location.href='print_meal_plan.html'">Print Meal Plan</button>
+        <button type="button" class="btn btn-danger" onclick="window.location.href='shopping-list.html'">Generate Shopping List</button>
+    </div>
+</div>
+
+<div id="dinner" class="tabcontent">
+  <div class="row no-gutters">
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Monday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+      </div>
+    </div>
+
+    </div>
+
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Tuesday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    </div>
+  </div>
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Wednesday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    </div>
+  </div>
+      <div class="col">
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Thursday</div>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+      </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Friday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    </div>
+  </div>
+    <div class="col">
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Saturday</div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    </div>
+  </div>
+  <div class="col">
+    <div class="card bg-light mb-3" style="max-width: 18rem;">
+    <div class="card-header">Sunday</div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+  </div>
+
+</div>
+
+</div>
+
+    </div>
+    <div class="buttons">
+        <button type="button" class="btn btn-success" onclick="window.location.href='print_meal_plan.html'">Print Meal Plan</button>
+        <button type="button" class="btn btn-danger" onclick="window.location.href='shopping-list.html'">Generate Shopping List</button>
+    </div>
+</div>
+  <h2>Recipes</h2>
+<div class="row">
+  <div class="col">
+    <div class="tab">
+  <button class="tablinks2 active" onclick="openTab2(event, 'recipe-breakfast')">Breakfast</button>
+  <button class="tablinks2" onclick="openTab2(event, 'recipe-lunch')">Lunch</button>
+  <button class="tablinks2" onclick="openTab2(event, 'recipe-dinner')">Dinner</button>
+</div>
+
+<div id="recipe-breakfast" class="tabcontent2" style=display:block>
+  <div class="row no-gutters">
+    <div class="col">
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag1">Recipe 1</p>
+      </div>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag2">Recipe 2</p>
+      </div>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag3">Recipe 3</p>
+      </div>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag4">Recipe 4</p>
+      </div>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag5">Recipe 5</p>
+      </div>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag6">Recipe 6</p>
+      </div>
+    </div>
+    <div class="col">
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag1">Recipe 7</p>
+      </div>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag2">Recipe 8</p>
+      </div>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag3">Recipe 9</p>
+      </div>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag4">Recipe 10</p>
+      </div>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag5">Recipe 11</p>
+      </div>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag6">Recipe 12</p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div id="recipe-lunch" class="tabcontent2">
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <p draggable="true" ondragstart="drag(event)" id="drag7">Recipe 1</p>
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <p draggable="true" ondragstart="drag(event)" id="drag8">Recipe 2</p>
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <p draggable="true" ondragstart="drag(event)" id="drag9">Recipe 3</p>
+  </div>
+</div>
+
+<div id="recipe-dinner" class="tabcontent2">
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <p draggable="true" ondragstart="drag(event)" id="drag10">Recipe 1</p>
+  </div>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <p draggable="true" ondragstart="drag(event)" id="drag11">Recipe 2</p>
+  </div>
+</div>
+  </div>
+
+</div>
+
+<script>
+function openTab(evt, tab) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tab).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function openTab2(evt, tab) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent2");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks2");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tab).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+      </div>
+
+    </body>
+</html>
